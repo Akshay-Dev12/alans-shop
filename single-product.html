@@ -95,13 +95,13 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-8">
                 <div class="left-images">
-                    <img src="assets/images/men-01.jpg" alt="">
+                    <img src="assets/images/yoyo-1.jpeg" alt="">
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="right-content">
-                    <h4>New Green Jacket</h4>
-                    <span class="price">1200</span>
+                    <h4>T Shirt</h4>
+                    <span class="price">800</span>
                     <ul class="stars">
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
@@ -119,9 +119,27 @@ https://templatemo.com/tm-571-hexashop
                             </div>
                         </div>
                     </div>
+                    <h2>Size</h2>
+
+                    <select id="groupSizeDropdown" onchange="onGroupSizeChange()">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L" selected>L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  
+                    <p id="selectedSize">Size: 3</p>
+                  
+                    <script>
+                      function onGroupSizeChange() {
+                        const dropdown = document.getElementById("groupSizeDropdown");
+                        const selected = dropdown.value;
+                        document.getElementById("selectedSize").innerText = `Selected Group Size: ${selected}`;
+                      }
+                    </script>
                     <div class="total">
-                        <h4>Total: 1200</h4>
-                        <div class="main-border-button"><a href="#">Add To Cart</a></div>
+                        <h4>Total: 800</h4>
+                        <div class="main-border-button"><a href="contact.html">Buy now.</a></div>
                     </div>
                 </div>
             </div>
@@ -142,7 +160,7 @@ https://templatemo.com/tm-571-hexashop
                         </div>
                         <ul>
                             <li><a href="#"></a></li>
-                            <li><a href="#">alan.s.shopping@gmail.com</a></li>
+                            <li><a href="#">officialakhilmkl@gmail.com</a></li>
                             <li><a href="#">8792583802</a></li>
                         </ul>
                     </div>
